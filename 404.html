@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page not found — Tunmbi Okediran</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --clr-plaster: #F7F2E8;
+      --clr-stone:   #1C1C1E;
+      --clr-terra:   #C0552A;
+      --clr-muted:   #7A7268;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--clr-plaster);
+      color: var(--clr-stone);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .wrap { max-width: 480px; }
+    .code {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(5rem, 20vw, 9rem);
+      font-weight: 700;
+      color: var(--clr-terra);
+      line-height: 1;
+      margin-bottom: 1rem;
+      opacity: .15;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.4rem, 4vw, 2rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    p {
+      color: var(--clr-muted);
+      font-size: 1rem;
+      line-height: 1.65;
+      margin-bottom: 2rem;
+    }
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      padding: .65rem 1.4rem;
+      background: var(--clr-terra);
+      color: #fff;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: .875rem;
+      text-decoration: none;
+      transition: background .2s;
+    }
+    a:hover { background: #9C3E18; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="code" aria-hidden="true">404</div>
+    <h1>Page not found</h1>
+    <p>This page doesn't exist — the URL may have changed or been mistyped. Head back to the portfolio.</p>
+    <a href="index.html">← Back to portfolio</a>
+  </div>
+</body>
+</html>
