@@ -124,6 +124,32 @@ function renderAbout() {
         <div class="stat-label">${h.label}</div>
       </div>`;
   });
+
+  const cvEl = document.getElementById('about-cv');
+  if (!cvEl || !a.snapshot) return;
+
+  const sectionsHtml = a.snapshot.sections.map(section => {
+    const items = section.items.map(item => `<li>${item}</li>`).join('');
+    return `
+      <article class="cv-section reveal">
+        <h3 class="cv-section-title">${section.title}</h3>
+        <ul class="cv-list">${items}</ul>
+      </article>`;
+  }).join('');
+
+  const factsHtml = (a.snapshot.quickFacts || []).map(fact =>
+    `<span class="cv-fact"><strong>${fact.label}:</strong> ${fact.value}</span>`
+  ).join('');
+
+  cvEl.innerHTML = `
+    <div class="about-cv-card">
+      <div class="about-cv-head">
+        <h3 class="about-cv-title serif">${a.snapshot.heading}</h3>
+        <p class="about-cv-intro">${a.snapshot.intro}</p>
+      </div>
+      <div class="cv-sections-grid">${sectionsHtml}</div>
+      <div class="cv-facts">${factsHtml}</div>
+    </div>`;
 }
 
 /* ── Projects ────────────────────────────────────────────── */

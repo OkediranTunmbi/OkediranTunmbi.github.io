@@ -60,6 +60,39 @@ const CONTENT = {
       { value: "SR 11-7", label: "Governance framework" },
       { value: "CUDA",   label: "GPU-trained models"   },
     ],
+    snapshot: {
+      heading: "Background at a Glance",
+      intro: "Education, research, and industry experience in ML engineering, quant finance, and model governance.",
+      sections: [
+        {
+          title: "Education",
+          items: [
+            "University of Delaware - PhD, Financial Services Analytics (Aug 2024 - Present)",
+            "Brno University of Technology - MSc, Mathematical Engineering (Sept 2020 - Jul 2022)",
+            "Federal University of Technology Akure - B.Tech, Industrial Mathematics (Feb 2014 - Oct 2018), First Class Honors",
+          ],
+        },
+        {
+          title: "Experience Highlights",
+          items: [
+            "PhD Researcher, University of Delaware: research on economic regularization for cross-sectional return prediction and sufficient dimension reduction.",
+            "Data Analyst II, Zebra Technologies: Supported SQL Server-to-GCP migration for 50+ Power BI dashboards, improving dashboard responsiveness and reducing recurring refresh failures through performance analysis, data model cleanup, and reporting logic optimization.",
+          ],
+        },
+        {
+          title: "Research & Leadership",
+          items: [
+            "Accepted contributed paper, Joint Statistical Meetings (JSM) 2026: economic regularization for cross-sectional return prediction.",
+            "Vice President, Data Science Student Association (University of Delaware): leading website and AI-assisted communication workflow initiatives.",
+          ],
+        },
+      ],
+      quickFacts: [
+        { label: "Location", value: "Newark, Delaware, USA" },
+        { label: "Focus", value: "ML Engineering, Quant Research, AI Governance" },
+        { label: "Open To", value: "Quant research, ML engineering, and model risk roles" },
+      ],
+    },
   },
 
   /* ── Projects ───────────────────────────────────────────── */

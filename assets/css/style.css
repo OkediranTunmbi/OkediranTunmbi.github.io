@@ -372,6 +372,88 @@ section { padding-block: var(--space-3xl); }
   letter-spacing: 0.04em;
 }
 
+.about-cv {
+  margin-top: var(--space-2xl);
+}
+
+.about-cv-card {
+  background: var(--clr-bg);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-sm);
+}
+
+.about-cv-head {
+  margin-bottom: var(--space-lg);
+}
+
+.about-cv-title {
+  font-size: 1.35rem;
+  color: var(--clr-ink);
+  margin-bottom: var(--space-sm);
+}
+
+.about-cv-intro {
+  color: var(--clr-text-mid);
+  font-size: 0.95rem;
+}
+
+.cv-sections-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.cv-section {
+  background: var(--clr-bg-alt);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+}
+
+.cv-section-title {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--clr-accent);
+  margin-bottom: var(--space-sm);
+}
+
+.cv-list {
+  list-style: disc;
+  margin-left: 1rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.cv-list li {
+  color: var(--clr-text-mid);
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+
+.cv-facts {
+  margin-top: var(--space-lg);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.cv-fact {
+  font-size: 0.76rem;
+  background: var(--clr-bg);
+  border: 1px solid var(--clr-border-mid);
+  color: var(--clr-text-mid);
+  border-radius: 99px;
+  padding: 0.3rem 0.7rem;
+}
+
+.cv-fact strong {
+  color: var(--clr-text);
+}
+
 /* ── Projects ────────────────────────────────────────────── */
 #projects { background: var(--clr-bg); }
 
@@ -733,6 +815,7 @@ footer {
 /* ── Responsive ──────────────────────────────────────────── */
 @media (max-width: 1024px) {
   .stack-grid { grid-template-columns: repeat(2, 1fr); }
+  .cv-sections-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 768px) {
@@ -768,6 +851,7 @@ footer {
   .projects-grid   { grid-template-columns: 1fr; }
   .philosophy-grid { grid-template-columns: 1fr; }
   .stack-grid      { grid-template-columns: 1fr; }
+  .cv-sections-grid{ grid-template-columns: 1fr; }
   .footer-inner    { justify-content: center; text-align: center; }
 }
 
